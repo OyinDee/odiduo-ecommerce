@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cfc67fa6.css",
+    "main.js": "/static/js/main.4a401e02.js",
+    "static/js/377.3f5f7129.chunk.js": "/static/js/377.3f5f7129.chunk.js",
+    "static/media/userr.png": "/static/media/userr.366833804f249f3173a5.png",
+    "service-worker.js": "/service-worker.js",
+    "static/media/bsneak.jpg": "/static/media/bsneak.f8087a1c3edd410314b0.jpg",
+    "static/media/bicycle.jpg": "/static/media/bicycle.2c6aa2b79faf6e94f94c.jpg",
+    "static/media/chargers.jpg": "/static/media/chargers.53dc08c2d132712ef1e4.jpg",
+    "static/media/body spray.jpg": "/static/media/body spray.73761f187cea5ea76f0f.jpg",
+    "static/media/bff.jpg": "/static/media/bff.ff1ff912ace483c39aba.jpg",
+    "static/media/charger.jpg": "/static/media/charger.adc8d26a3baf4c19fd1b.jpg",
+    "static/media/bag.jpg": "/static/media/bag.f7c9d863136cfb6899bc.jpg",
+    "static/media/logout.png": "/static/media/logout.56c60220e1ed71f09e37.png",
+    "static/media/camera.jpg": "/static/media/camera.63131b66e1d14272021f.jpg",
+    "static/media/brace.jpg": "/static/media/brace.9b4250563a5f0ac38d30.jpg",
+    "static/media/bags.jpg": "/static/media/bags.927c7369127286dec6b2.jpg",
+    "static/media/logo.svg": "/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "/index.html",
+    "main.cfc67fa6.css.map": "/static/css/main.cfc67fa6.css.map",
+    "main.4a401e02.js.map": "/static/js/main.4a401e02.js.map",
+    "377.3f5f7129.chunk.js.map": "/static/js/377.3f5f7129.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfc67fa6.css",
+    "static/js/main.4a401e02.js"
+  ]
+}

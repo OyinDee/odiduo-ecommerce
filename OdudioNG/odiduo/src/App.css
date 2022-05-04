@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 5% auto;
+  width: 635px;
+  height: 430px;
+  background: white;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+.item {
+  width: 50%;
+  position: relative;
+}
+.big{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+.item-image {
+  height: 430px;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  background-color: #303030;
+  overflow: hidden;
+  z-index: 1;
+}
+.item-details {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  color: #111111;
+  text-align: left;
+}
+.item-details__title {
+  font-size: 22px;
+}
+.item-details__amount {
+  font-weight: bolder;
+}
+.checkout {
+  background: #000000; /* fallback for old browsers */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 430px;
+  width: 50%;
+}
+.checkout-form {
+  padding: 20px 20px;
+}
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.checkout-field label {
+  text-align: left;
+  color: #000000;
+  font-size: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.checkout-field input {
+  background-color: transparent;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  color: #050505;
+  height: 35px;
+}
+.paystack-button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background-color: #131212;
+  font-weight: bold;
+  color: #e0eafc;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  margin-top: 40px;
+}
+.App {
+    text-align: center;
+    font-family: "Roboto";
+    letter-spacing: 0.1rem;
+}
+
+.theWhole {
+    height: 2vh;
+    width: 98vw;
+    margin: 0;
+}
+.loginorsignup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.userbox{
+    margin: auto;
+    padding: 15px;
+    width: 40vw;
+    border: thin solid black;
+    border-radius: 30px;
+    text-align: center;
+}
+.occupy{ 
+    display: flex;
+    padding: 10vh;
+    background: black;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    align-content: center;
+}
+
+.trans{
+    background: transparent;
+    margin-left: 2vw;
+    color: white
+}
+.flexxitems{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100vw; */
+    justify-content: center;
+}
+.okay{
+    background: transparent;
+}
+.alert{
+    background: rgb(221, 214, 199);
+    opacity: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+}
+.inputdetail{
+    outline-color: rgb(78, 78, 78);
+    margin-bottom: 4px;
+    border:  thin solid grey;
+    height: 5vh;
+    width: 25vw;
+    text-align: center;
+}
+.signinbtn{
+    text-align: center;
+    padding: 2vh;
+    background: rgb(0, 0, 0);
+    border-radius: 4px;
+    color: #ffffff;
+    border: thin solid black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn2{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 43%;
+    height: 40px;
+    width: 150px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: #ffffff;
+    border: thin solid black;
+    font-size: 15px;
+    cursor: pointer;  
+}
+.btn2:hover{
+    text-align: center;
+
+    height: 70px;
+    width: 160px;
+    background: rgb(0, 0, 0);
+    border-radius: 0px;
+    color: #ffffff;
+    border: thin solid black;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px;
+}
+/* .userswelcometext{
+    
+} */
+.theWhole1 {
+    text-align: center;
+    /* width: 100vw; */
+    color: black;
+    margin-top: 35px;
+
+    position: relative;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+* {
+    background-color: whitesmoke;
+}
+
+.resize1 {
+    height: 26px;
+    width: 28px;
+    right: 0;
+    background: transparent;
+}
+.resize2 {
+    height: 26px;
+    width: 35px;
+    right: 0;
+    bottom: 0;
+    /* top: 1; */
+    background: transparent;
+}
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+    display: block;
+    transition: 0.3s;
+    background: #111
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+    font-size: 30px;
+    
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+    background: #111;
+    color:  red;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    /* background-color: #111; */
+    /* color: white; */
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    /* background-color: #444; */
+    font-size: 40px;
+    
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+.resize {
+    height: 28px;
+    width: 33px;
+    right: 0;
+    background: transparent;
+}
+
+.space {
+    margin: 10px;
+    background: #111
+}
+
+.topflex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #282c34;
+}
+
+
+.slideshow-container {
+    position: relative;
+    margin: 0;
+}
+
+.all {
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+}
+
+.dflex {
+    display: block;
+    margin-top: 20px;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    /* margin-top: -22px; */
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.blend {
+    background: transparent;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 45px;
+    padding: 12px 12px;
+    position: absolute;
+    bottom: 30%;
+    /* width: 100%; */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration-line: none
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 32px;
+    padding: 12px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+}
+
+.innertext {
+    font-size: 32px;
+    margin-top: -10%;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 40px;
+    /* margin-left: 45%; */
+    height: 40px;
+    width: 150px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: #ffffff;
+    border: thin solid black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btnn1{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-left: 25%;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn4{
+    text-align: center;
+    margin-top: 40px;
+    /* margin-left: 45%; */
+    height: 40px;
+    width: 49vh;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: #ffffff;
+    border: thin solid black;
+    font-size: 15px;
+    cursor: pointer;
+}
+b{
+    background: transparent;
+    color: rgb(196, 196, 196);
+}
+.ordersummary{
+    display: flex;
+    margin: 6vh 10vw;
+    background: black;
+    /* padding: 10vw; */
+    color: whitesmoke;
+    /* font-family: cursive; */
+    justify-content: center;
+    padding-right: 5vw;
+}
+.orderdetails{
+    background: transparent;
+    margin: 6vw;
+}
+.btnpay{
+    border: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(7, 0, 0);
+    height: 5vh;
+    position: relative;
+    margin-top: 10%;
+    padding: 8px;
+    }
+.itemcontainer{
+    width: 30vw;
+    margin-right: 10px;
+    padding: 4vh;
+    height: 50vh;
+    background: #000000;
+    color: #717171;
+    padding-bottom: 10vh;
+    margin-bottom: 5vh; 
+}
+.itemcontainer span{
+    background: transparent;
+}
+.flexitems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itemimg{
+    width: 30vw;
+    height: 30vh;
+}
+.btn1:hover {
+    text-align: center;
+    margin-top: 40px;
+    height: 70px;
+    width: 160px;
+    background: rgb(0, 0, 0);
+    border-radius: 0px;
+    color: #ffffff;
+    border: thin solid black;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px;
+}
+.search{
+    height: 23px;
+    border: thin solid grey;
+    border-radius: 5px;
+}
+.btn1 {
+    height: 50px;
+    background: whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+    margin-top: 10px;
+    /* border: thin solid black; */
+    color: #000000;
+    cursor: pointer;
+}
+
+.shift {
+    margin-left: 20px;
+}
+
+.numbertext1 {
+    color: #b1b1b1;
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+@media screen and (max-width: 480px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .openbtn {font-size: 20px;}
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .btnpay{
+        border: 0;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        cursor: pointer;
+        color: rgb(7, 0, 0);
+        margin-top: 15%;
+            height: 3vh;
+            padding: 10px;
+        }
+    .itemimg{
+        width: 100%;
+        height: 90px;
+        padding: 0;
+    }
+    .big{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        position: relative;
+        font-size: 15px;
+        
+    }
+    .btnn1{
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+        font-size: 10px;
+        cursor: pointer;
+        padding: 0;
+    }
+    .itemcontainer{
+        width: 100px;
+        margin-right: 10px;
+        padding-left: 30px;
+        padding: 10px;
+        height: fit-content;
+        background: white;
+
+        color: #5f5d5d;
+    }
+    #main {
+        transition: margin-left .5s;
+        padding: 10px;
+      }
+  }
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
