@@ -8,7 +8,7 @@ export default function Contact() {
     const navigate= useNavigate()
     const token = localStorage.token;
     useEffect(() => {
-      axios.get('http://odiduo.herokuapp.com/dashcheck',{
+      axios.get('https://odiduo.herokuapp.com/dashcheck',{
         headers:{
          'Authorization':`Bearer ${token}`,
          'Content-Type':'application/json',

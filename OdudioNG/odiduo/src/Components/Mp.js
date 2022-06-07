@@ -19,7 +19,7 @@ export default function Mp() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    axios.get('http://odiduo.herokuapp.com/dashcheck',{
+    axios.get('https://odiduo.herokuapp.com/dashcheck',{
       headers:{
        'Authorization':`Bearer ${token}`,
        'Content-Type':'application/json',

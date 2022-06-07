@@ -22,7 +22,7 @@ export default function Cart() {
     const navigate= useNavigate()
     useEffect(() => {
         
-        axios.get('http://odiduo.herokuapp.com/dashcheck',{
+        axios.get('https://odiduo.herokuapp.com/dashcheck',{
             headers:{
                 'Authorization':`Bearer ${token}`,
                 'Content-Type':'application/json',
