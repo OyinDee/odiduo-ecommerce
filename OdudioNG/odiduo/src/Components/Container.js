@@ -15,7 +15,6 @@ export default function Container({dynimage}) {
     <div className="mySlides fade">
 <img src={dynimage} className="all"/>
 <div className="innertext"></div>
-<center> <Link to="/mp"><button className="btn">Start shopping</button></Link></center>
 
   </div>
 

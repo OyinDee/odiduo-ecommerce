@@ -45,7 +45,6 @@ export default function Effect() {
             <>
         <div className="slideshow-container">
                 <Container dynimage={img11}></Container>
-                <Container dynimage={img12}></Container>
                 <Container dynimage={img13}></Container>
                 <Container dynimage={img5}></Container>
                 <Container dynimage={img6}></Container>

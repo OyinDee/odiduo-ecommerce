@@ -1,8 +1,9 @@
 import React from 'react'
-import {useSelector,useDispatch} from "react-redux"
 import {useEffect, useState} from "react"
 import {Routes, Route, useNavigate,Link} from "react-router-dom"
 import {changename,changeamount} from '../actions/change'
+import {useSelector,useDispatch} from "react-redux"
+
 import axios from 'axios'
 import Item from "./Item"
 import Navbar from './Navbar'
@@ -14,7 +15,6 @@ export default function Cart() {
     const name = useSelector((state)=>{
         return state.name
     })
-    // const[usern, setusern]=useState(name)
     const token = localStorage.token;
     const [Items,setItems]=useState([])
     const[sumofmoney, setSumofmoney]=useState(0)

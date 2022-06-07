@@ -15,7 +15,22 @@ export default function Home() {
     return (
         <>
         <Navbar/>
+        <div className="present">
+    <div className="welcomearea">
+    <center>
+    <h2>Purchase, receive your goods.</h2>
+    <h2>Sell, receive your payment.</h2>
+    <h5>...That in the end, we are all satisfied!</h5>
+    </center>
+        
+        
+        <center><Link to="/mp"><button className="btn">Start shopping</button></Link></center></div>
+        <div>
         <Effect/>
+        </div>
+        </div>
+
+                
         <Footer/>
         </>
     )

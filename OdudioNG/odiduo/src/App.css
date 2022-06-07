@@ -179,6 +179,10 @@
     font-size: 15px;
     cursor: pointer;  
 }
+.welcomearea{
+padding: 50px;
+padding-left: 100px
+}
 .btn2:hover{
     text-align: center;
 
@@ -197,11 +201,9 @@
 } */
 .theWhole1 {
     text-align: center;
-    /* width: 100vw; */
-    color: black;
-    margin-top: 35px;
-
+    margin-top: 10vh;
     position: relative;
+    background: transparent;    
 }
 
 .App-logo {
@@ -210,7 +212,7 @@
 }
 
 * {
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .resize1 {
@@ -230,7 +232,7 @@
 /* The sidebar menu */
 .sidebar {
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 0;
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
@@ -238,7 +240,7 @@
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
   }
   
   /* The sidebar links */
@@ -274,16 +276,8 @@
   .openbtn {
     font-size: 30px;
     cursor: pointer;
-    /* background-color: #111; */
-    /* color: white; */
-    padding: 10px 15px;
+
     border: none;
-  }
-  
-  .openbtn:hover {
-    /* background-color: #444; */
-    font-size: 40px;
-    
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -327,17 +321,22 @@
 .App-link {
     color: #282c34;
 }
-
+.present{
+    display: flex;
+    justify-content: space-between
+}
 
 .slideshow-container {
-    position: relative;
-    margin: 0;
+width: 50vw;
+height: 50vh;
 }
 
 .all {
     width: 100%;
     height: 70vh;
     margin: 0;
+    animation-name: resize;
+    animation-duration: 4s;
 }
 
 .dflex {
@@ -372,7 +371,7 @@
 }
 
 .blend {
-    background: transparent;
+background: transparent;
 }
 
 
@@ -457,7 +456,7 @@ b{
     margin: 6vh 10vw;
     background: black;
     /* padding: 10vw; */
-    color: whitesmoke;
+    color: white;
     /* font-family: cursive; */
     justify-content: center;
     padding-right: 5vw;
@@ -520,7 +519,7 @@ b{
 }
 .btn1 {
     height: 50px;
-    background: whitesmoke;
+    background: white;
     border-radius: 5px;
     padding: 5px;
     margin: 3px;
@@ -569,10 +568,30 @@ b{
     animation-name: fade;
     animation-duration: 4s;
 }
+
 @media screen and (max-width: 480px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+    .all {
+        width: 100%;
+        height: 50vh;
+        margin: 0;
+        animation-name: resize;
+        animation-duration: 1s;
+    }
+    .slideshow-container {
+        width: 100%;
+        height: 50vh;
+        }
     .openbtn {font-size: 20px;}
+    .welcomearea{
+        width: 92vw;
+        padding: 10px;
+        }
+    .present{
+        display: flex;
+        flex-direction: column;
+    }
     *{
         margin: 0;
         padding: 0;
@@ -629,10 +648,18 @@ b{
 }
 @keyframes App-logo-spin {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg)scale(0.6);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(360deg),scale(1);
+    }
+}
+@keyframes resize {
+    from {
+        transform: scale(0.6);
+    }
+    to {
+        transform: scale(1);
     }
 }
 @keyframes fade {
