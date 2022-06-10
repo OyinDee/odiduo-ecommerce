@@ -211,7 +211,6 @@ app.post('/addToCart', (request,response)=>{
         // console.log(request.body)
         const form = request.body
                 console.log("Sucess");
-                // console.log(fields)
                 const oldPath = form.imgofgood
                 
                 cloudinary.v2.uploader.upload(oldPath, (error, result)=>{

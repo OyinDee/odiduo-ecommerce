@@ -36,7 +36,7 @@ export default function AddGood() {
 
    const uploadFile=(e)=> {
        const file = e.target.files[0]
-        // let file = event.target.files[0];
+
         console.log(file);
         let reader=  new FileReader()
         reader.readAsDataURL(file)
